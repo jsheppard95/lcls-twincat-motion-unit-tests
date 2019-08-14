@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.12">
+  <GVL Name="TestAxes" Id="{ea5f017b-0452-4ac3-9a86-616acfef755f}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	M1 : DUT_MotionStage:=(nEnableMode:=0); // Test Master Axis
+	master_enc : ST_RenishawAbsEnc;
+
+	M2 : DUT_MotionStage:=(nEnableMode:=0); // Test Slave Axis
+	slave_enc : ST_RenishawAbsEnc;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>
